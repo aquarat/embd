@@ -30,6 +30,7 @@ package rpi
 import (
 	"github.com/cfreeman/embd"
 	"github.com/cfreeman/embd/host/generic"
+	"log"
 )
 
 var spiDeviceMinor = 0
@@ -95,12 +96,47 @@ func init() {
 	embd.Register(embd.HostRPi, func(rev int) *embd.Descriptor {
 		// Refer to http://elinux.org/RPi_HardwareHistory#Board_Revision_History
 		// for details.
+
 		pins := rev3Pins
-		if rev < 16 {
-			pins = rev2Pins
+		switch rev {
+		case 0x2 : pins = rev1Pins
+		case 0x3 : pins = rev1Pins
+		case 0x4 : pins = rev2Pins
+		case 0x5 : pins = rev2Pins
+		case 0x6 : pins = rev2Pins
+		case 0x7 : pins = rev2Pins
+		case 0x8 : pins = rev2Pins
+		case 0x9 : pins = rev2Pins
+		case 0x000d : pins = rev2Pins
+		case 0x000e : pins = rev2Pins
+		case 0x000f : pins = rev2Pins
+		case 0x10 : pins = rev1Pins
+		case 0x11 : pins = rev1Pins
+		case 0x12 : pins = rev1Pins
+		case 0x13 : pins = rev1Pins
+		case 0x14 : pins = rev1Pins
+		case 0x15 : pins = rev1Pins
+		case 0xa01040 : pins = rev1Pins
+		case 0xa01041 : pins = rev1Pins
+		case 0xa21041 : pins = rev1Pins
+		case 0xa22042 : pins = rev1Pins
+		case 0x900021 : pins = rev1Pins
+		case 0x900032 : pins = rev1Pins
+		case 0x900092 : pins = rev1Pins
+		case 0x900093 : pins = rev1Pins
+		case 0x920093 : pins = rev1Pins
+		case 0x9000c1 : pins = rev1Pins
+		case 0xa02082 : pins = rev3Pins
+		case 0xa020a0 : pins = rev3Pins
+		case 0xa22082 : pins = rev3Pins
+		case 0xa32082 : pins = rev3Pins
+		default : log.Println("Can't determine the revision of your board.")
 		}
-		if rev < 4 {
-			pins = rev1Pins
+
+		switch {
+		case pins[0].Aliases[0] == "0": log.Println("Selected revision 1 pin mapping.")
+		case pins[0].Aliases[0] == "2": log.Println("Selected revision 2 pin mapping.")
+		case pins[0].Aliases[0] == "5": log.Println("Selected revision 3 pin mapping.")
 		}
 
 		return &embd.Descriptor{

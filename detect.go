@@ -27,6 +27,7 @@ import (
 	"os/exec"
 	"strconv"
 	"strings"
+	"log"
 )
 
 // The Host type represents all the supported host types.
@@ -116,6 +117,7 @@ func cpuInfo() (model, hardware string, revision int, err error) {
 				continue
 			}
 			revision = int(rev)
+			log.Println("Hardware revision as int : ", revision)
 		case strings.HasPrefix(fields[0], "Hardware"):
 			hardware = strings.TrimSpace(fields[1])
 		case strings.HasPrefix(fields[0], "model name"):
