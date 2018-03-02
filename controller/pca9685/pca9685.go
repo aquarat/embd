@@ -25,8 +25,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cfreeman/embd"
-	"github.com/cfreeman/embd/util"
+	"github.com/aquarat/embd"
+	"github.com/aquarat/embd/util"
 	"github.com/golang/glog"
 )
 

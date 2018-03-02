@@ -32,7 +32,7 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/cfreeman/embd"
+	"github.com/aquarat/embd"
 )
 
 type digitalPin struct {

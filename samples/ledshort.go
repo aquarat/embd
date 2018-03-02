@@ -8,9 +8,9 @@ import (
 	"flag"
 	"time"
 
-	"github.com/cfreeman/embd"
+	"github.com/aquarat/embd"
 
-	_ "github.com/cfreeman/embd/host/bbb"
+	_ "github.com/aquarat/embd/host/bbb"
 )
 
 func main() {

@@ -27,7 +27,7 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/cfreeman/embd"
+	"github.com/aquarat/embd"
 )
 
 const (

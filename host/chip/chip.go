@@ -31,8 +31,8 @@
 package chip
 
 import (
-	"github.com/cfreeman/embd"
-	"github.com/cfreeman/embd/host/generic"
+	"github.com/aquarat/embd"
+	"github.com/aquarat/embd/host/generic"
 )
 
 var spiDeviceMinor = 32766

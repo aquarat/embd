@@ -22,7 +22,7 @@ package main
 import (
 	"os"
 
-	_ "github.com/cfreeman/embd/host/all"
+	_ "github.com/aquarat/embd/host/all"
 	"github.com/codegangsta/cli"
 )
 

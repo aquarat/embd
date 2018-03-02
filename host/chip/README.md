@@ -13,8 +13,8 @@ A simple demo to blink an LED connected with a small resistor between XIO-P6 and
 package main
 import (
 	"time"
-	"github.com/cfreeman/embd"
-	_ "github.com/cfreeman/embd/host/chip"
+	"github.com/aquarat/embd"
+	_ "github.com/aquarat/embd/host/chip"
 )
 
 func main() {

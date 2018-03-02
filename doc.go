@@ -22,7 +22,7 @@ called as 1-liners instead of first instantiating a DigitalPin and then writing 
 
 To get started a host driver needs to be registered with the top-level embd package. This is
 most easily accomplished by doing an "underscore import" on of the sub-packages of embd/host,
-e.g., `import _ "github.com/cfreeman/embd/host/chip"`. An `Init()` function in the host driver
+e.g., `import _ "github.com/aquarat/embd/host/chip"`. An `Init()` function in the host driver
 registers all the individual drivers with embd.
 
 After getting the host driver the next step might be to instantiate a GPIO pin using
@@ -38,7 +38,7 @@ This section shows a few choice samples, more are available in the samples folde
 
 Use the LED driver to toggle LEDs on the BBB:
 
-	import "github.com/cfreeman/embd"
+	import "github.com/aquarat/embd"
 	...
 	embd.InitLED()
 	defer embd.CloseLED()
@@ -49,7 +49,7 @@ Use the LED driver to toggle LEDs on the BBB:
 
 Even shorter while prototyping:
 
-	import "github.com/cfreeman/embd"
+	import "github.com/aquarat/embd"
 	...
 	embd.InitLED()
 	defer embd.CloseLED()
@@ -58,7 +58,7 @@ Even shorter while prototyping:
 
 BBB + PWM:
 
-	import "github.com/cfreeman/embd"
+	import "github.com/aquarat/embd"
 	...
 	embd.InitGPIO()
 	defer embd.CloseGPIO()
@@ -70,7 +70,7 @@ BBB + PWM:
 
 Control GPIO pins on the RaspberryPi / BeagleBone Black:
 
-	import "github.com/cfreeman/embd"
+	import "github.com/aquarat/embd"
 	...
 	embd.InitGPIO()
 	defer embd.CloseGPIO()
@@ -80,7 +80,7 @@ Control GPIO pins on the RaspberryPi / BeagleBone Black:
 
 Could also do:
 
-	import "github.com/cfreeman/embd"
+	import "github.com/aquarat/embd"
 	...
 	embd.InitGPIO()
 	defer embd.CloseGPIO()
@@ -92,8 +92,8 @@ Could also do:
 
 Or read data from the Bosch BMP085 barometric sensor:
 
-	import "github.com/cfreeman/embd"
-	import "github.com/cfreeman/embd/sensor/bmp085"
+	import "github.com/aquarat/embd"
+	import "github.com/aquarat/embd/sensor/bmp085"
 	...
 	bus := embd.NewI2CBus(1)
 	...
@@ -104,8 +104,8 @@ Or read data from the Bosch BMP085 barometric sensor:
 
 Even find out the heading from the LSM303 magnetometer:
 
-	import "github.com/cfreeman/embd"
-	import "github.com/cfreeman/embd/sensor/lsm303"
+	import "github.com/aquarat/embd"
+	import "github.com/aquarat/embd/sensor/lsm303"
 	...
 	bus := embd.NewI2CBus(1)
 	...

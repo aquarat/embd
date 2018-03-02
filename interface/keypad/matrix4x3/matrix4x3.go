@@ -25,7 +25,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/cfreeman/embd"
+	"github.com/aquarat/embd"
 )
 
 type Key int

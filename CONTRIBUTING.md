@@ -3,7 +3,7 @@
 This actually is really simple. A few simple guidelines and we can break for dinner:
 
 * EMBD is designed with a lot of affection, with utmost importance given to the dev experience (read: the API feel and style.) So always think from that angle when creating the pull request
-* [Documentation](https://godoc.org/github.com/cfreeman/embd) helps drive adoption. No exceptions
+* [Documentation](https://godoc.org/github.com/aquarat/embd) helps drive adoption. No exceptions
 
 When it comes to the code:
 

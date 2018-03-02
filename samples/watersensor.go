@@ -6,11 +6,11 @@ import (
 	"flag"
 	"time"
 
-	"github.com/cfreeman/embd"
-	"github.com/cfreeman/embd/sensor/watersensor"
+	"github.com/aquarat/embd"
+	"github.com/aquarat/embd/sensor/watersensor"
 	"github.com/golang/glog"
 
-	_ "github.com/cfreeman/embd/host/all"
+	_ "github.com/aquarat/embd/host/all"
 )
 
 func main() {

@@ -27,7 +27,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/cfreeman/embd"
+	"github.com/aquarat/embd"
 )
 
 type led struct {

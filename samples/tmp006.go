@@ -8,10 +8,10 @@ import (
 	"os"
 	"os/signal"
 
-	"github.com/cfreeman/embd"
-	"github.com/cfreeman/embd/sensor/tmp006"
+	"github.com/aquarat/embd"
+	"github.com/aquarat/embd/sensor/tmp006"
 
-	_ "github.com/cfreeman/embd/host/all"
+	_ "github.com/aquarat/embd/host/all"
 )
 
 func main() {

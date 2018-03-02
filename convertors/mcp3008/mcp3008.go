@@ -21,7 +21,7 @@
 package mcp3008
 
 import (
-	"github.com/cfreeman/embd"
+	"github.com/aquarat/embd"
 	"github.com/golang/glog"
 )
 

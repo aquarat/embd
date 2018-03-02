@@ -28,7 +28,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/cfreeman/embd"
+	"github.com/aquarat/embd"
 )
 
 type analogPin struct {

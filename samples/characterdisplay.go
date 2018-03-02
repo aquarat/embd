@@ -6,11 +6,11 @@ import (
 	"flag"
 	"time"
 
-	"github.com/cfreeman/embd"
-	"github.com/cfreeman/embd/controller/hd44780"
-	"github.com/cfreeman/embd/interface/display/characterdisplay"
+	"github.com/aquarat/embd"
+	"github.com/aquarat/embd/controller/hd44780"
+	"github.com/aquarat/embd/interface/display/characterdisplay"
 
-	_ "github.com/cfreeman/embd/host/all"
+	_ "github.com/aquarat/embd/host/all"
 )
 
 func main() {

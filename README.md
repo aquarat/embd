@@ -1,4 +1,4 @@
-# embd [![GoDoc](http://godoc.org/github.com/cfreeman/embd?status.png)](http://godoc.org/github.com/cfreeman/embd)
+# embd [![GoDoc](http://godoc.org/github.com/aquarat/embd?status.png)](http://godoc.org/github.com/aquarat/embd)
 
 **embd** is a hardware abstraction layer (HAL) for embedded systems.
 
@@ -32,8 +32,8 @@ package main
 import (
 	"time"
 
-	"github.com/cfreeman/embd"
-	_ "github.com/cfreeman/embd/host/rpi" // This loads the RPi driver
+	"github.com/aquarat/embd"
+	_ "github.com/aquarat/embd/host/rpi" // This loads the RPi driver
 )
 
 func main() {
@@ -46,7 +46,7 @@ func main() {
 
 Then install the EMBD package:
 
-	$ go get github.com/cfreeman/embd
+	$ go get github.com/aquarat/embd
 
 Build the binary for linux/ARM:
 
@@ -69,7 +69,7 @@ Then on the rPi run the program with ```sudo```*:
 * Assuming your RaspberryPi has an IP address of ```192.168.2.2```. Substitute as necessary
 * `sudo` (root) permission is required as we are controlling the hardware by writing to special files
 * This sample program is optimized for brevity and does not clean up after itself. Click here to
-  see the [full version](https://github.com/cfreeman/embd/blob/master/samples/fullblinker.go)
+  see the [full version](https://github.com/aquarat/embd/blob/master/samples/fullblinker.go)
 
 ## Supported Platforms
 
@@ -83,24 +83,24 @@ Then on the rPi run the program with ```sudo```*:
 
 ## Supported Protocols
 
-* **Digital GPIO** [Documentation](http://godoc.org/github.com/cfreeman/embd#DigitalPin)
-* **Analog GPIO** [Documentation](http://godoc.org/github.com/cfreeman/embd#AnalogPin)
-* **PWM** [Documentation](http://godoc.org/github.com/cfreeman/embd#PWMPin)
-* **I2C** [Documentation](http://godoc.org/github.com/cfreeman/embd#I2CBus)
-* **LED** [Documentation](http://godoc.org/github.com/cfreeman/embd#LED)
-* **SPI** [Documentation](http://godoc.org/github.com/cfreeman/embd#SPIBus)
+* **Digital GPIO** [Documentation](http://godoc.org/github.com/aquarat/embd#DigitalPin)
+* **Analog GPIO** [Documentation](http://godoc.org/github.com/aquarat/embd#AnalogPin)
+* **PWM** [Documentation](http://godoc.org/github.com/aquarat/embd#PWMPin)
+* **I2C** [Documentation](http://godoc.org/github.com/aquarat/embd#I2CBus)
+* **LED** [Documentation](http://godoc.org/github.com/aquarat/embd#LED)
+* **SPI** [Documentation](http://godoc.org/github.com/aquarat/embd#SPIBus)
 
 ## Supported Sensors
 
-* **BH1750FVI** Luminosity sensor [Documentation](http://godoc.org/github.com/cfreeman/embd/sensor/bh1750fvi), [Datasheet](http://www.elechouse.com/elechouse/images/product/Digital%20light%20Sensor/bh1750fvi-e.pdf)
-* **BME280** Pressure, Temperature and Humidity Sensor [Documentation](https://godoc.org/github.com/cfreeman/embd/sensor/bme280), [Datasheet](https://cdn-shop.adafruit.com/datasheets/BST-BME280_DS001-10.pdf)
-* **BMP085** Barometric pressure sensor [Documentation](http://godoc.org/github.com/cfreeman/embd/sensor/bmp085), [Datasheet](https://www.sparkfun.com/datasheets/Components/General/BST-BMP085-DS000-05.pdf)
-* **BMP180** Barometric pressure sensor [Documentation](http://godoc.org/github.com/cfreeman/embd/sensor/bmp180), [Datasheet](http://www.adafruit.com/datasheets/BST-BMP180-DS000-09.pdf)
-* **L3GD20** Gyroscope [Documentation](http://godoc.org/github.com/cfreeman/embd/sensor/l3gd20), [Datasheet](http://www.adafruit.com/datasheets/L3GD20.pdf)
-* **LSM303** Accelerometer and magnetometer [Documentation](http://godoc.org/github.com/cfreeman/embd/sensor/lsm303), [Datasheet](https://www.sparkfun.com/datasheets/Sensors/Magneto/LSM303%20Datasheet.pdf)
-* **TMP006** Thermopile sensor [Documentation](http://godoc.org/github.com/cfreeman/embd/sensor/tmp006), [Datasheet](http://www.adafruit.com/datasheets/tmp006.pdf)
-* **US020** Ultrasonic proximity sensor [Documentation](http://godoc.org/github.com/cfreeman/embd/sensor/us020), [Product Page](http://www.digibay.in/sensor/object-detection-and-proximity?product_id=239)
-* **Watersensor** Based on LM393 (currently only provides digital support) [Documentation](http://godoc.org/github.com/cfreeman/embd/sensor/watersensor)[Datasheet](http://www.ti.com/lit/ds/symlink/lm393-n.pdf)
+* **BH1750FVI** Luminosity sensor [Documentation](http://godoc.org/github.com/aquarat/embd/sensor/bh1750fvi), [Datasheet](http://www.elechouse.com/elechouse/images/product/Digital%20light%20Sensor/bh1750fvi-e.pdf)
+* **BME280** Pressure, Temperature and Humidity Sensor [Documentation](https://godoc.org/github.com/aquarat/embd/sensor/bme280), [Datasheet](https://cdn-shop.adafruit.com/datasheets/BST-BME280_DS001-10.pdf)
+* **BMP085** Barometric pressure sensor [Documentation](http://godoc.org/github.com/aquarat/embd/sensor/bmp085), [Datasheet](https://www.sparkfun.com/datasheets/Components/General/BST-BMP085-DS000-05.pdf)
+* **BMP180** Barometric pressure sensor [Documentation](http://godoc.org/github.com/aquarat/embd/sensor/bmp180), [Datasheet](http://www.adafruit.com/datasheets/BST-BMP180-DS000-09.pdf)
+* **L3GD20** Gyroscope [Documentation](http://godoc.org/github.com/aquarat/embd/sensor/l3gd20), [Datasheet](http://www.adafruit.com/datasheets/L3GD20.pdf)
+* **LSM303** Accelerometer and magnetometer [Documentation](http://godoc.org/github.com/aquarat/embd/sensor/lsm303), [Datasheet](https://www.sparkfun.com/datasheets/Sensors/Magneto/LSM303%20Datasheet.pdf)
+* **TMP006** Thermopile sensor [Documentation](http://godoc.org/github.com/aquarat/embd/sensor/tmp006), [Datasheet](http://www.adafruit.com/datasheets/tmp006.pdf)
+* **US020** Ultrasonic proximity sensor [Documentation](http://godoc.org/github.com/aquarat/embd/sensor/us020), [Product Page](http://www.digibay.in/sensor/object-detection-and-proximity?product_id=239)
+* **Watersensor** Based on LM393 (currently only provides digital support) [Documentation](http://godoc.org/github.com/aquarat/embd/sensor/watersensor)[Datasheet](http://www.ti.com/lit/ds/symlink/lm393-n.pdf)
 
 ## Interfaces
 
@@ -108,9 +108,9 @@ Then on the rPi run the program with ```sudo```*:
 
 ## Controllers
 
-* **PCA9685** 16-channel, 12-bit PWM Controller with I2C protocol [Documentation](http://godoc.org/github.com/cfreeman/embd/controller/pca9685), [Datasheet](http://www.adafruit.com/datasheets/PCA9685.pdf), [Product Page](http://www.adafruit.com/products/815)
-* **MCP4725** 12-bit DAC [Documentation](http://godoc.org/github.com/cfreeman/embd/controller/mcp4725), [Datasheet](http://www.adafruit.com/datasheets/mcp4725.pdf), [Product Page](http://www.adafruit.com/products/935)
-* **ServoBlaster** RPi PWM/PCM based PWM controller [Documentation](http://godoc.org/github.com/cfreeman/embd/controller/servoblaster), [Product Page](https://github.com/richardghirst/PiBits/tree/master/ServoBlaster)
+* **PCA9685** 16-channel, 12-bit PWM Controller with I2C protocol [Documentation](http://godoc.org/github.com/aquarat/embd/controller/pca9685), [Datasheet](http://www.adafruit.com/datasheets/PCA9685.pdf), [Product Page](http://www.adafruit.com/products/815)
+* **MCP4725** 12-bit DAC [Documentation](http://godoc.org/github.com/aquarat/embd/controller/mcp4725), [Datasheet](http://www.adafruit.com/datasheets/mcp4725.pdf), [Product Page](http://www.adafruit.com/products/935)
+* **ServoBlaster** RPi PWM/PCM based PWM controller [Documentation](http://godoc.org/github.com/aquarat/embd/controller/servoblaster), [Product Page](https://github.com/richardghirst/PiBits/tree/master/ServoBlaster)
 
 ## Convertors
 
@@ -119,7 +119,7 @@ Then on the rPi run the program with ```sudo```*:
 
 ## The command line tool
 
-	go get github.com/cfreeman/embd/embd
+	go get github.com/aquarat/embd/embd
 
 will install a command line utility ```embd``` which will allow you to quickly get started with prototyping. The binary should be available in your ```$GOPATH/bin```. However, to be able to run this on a ARM based device, you will need to build it with ```GOOS=linux``` and ```GOARCH=arm``` environment variables set.
 
@@ -137,14 +137,14 @@ Package **embd** provides a hardware abstraction layer for doing embedded progra
 on supported platforms like the Raspberry Pi and BeagleBone Black. Most of the examples below
 will work without change (i.e. the same binary) on all supported platforms. How cool is that?
 
-Although samples are all present in the [samples](https://github.com/cfreeman/embd/tree/master/samples) folder,
+Although samples are all present in the [samples](https://github.com/aquarat/embd/tree/master/samples) folder,
 we will show a few choice examples here.
 
 Use the **LED** driver to toggle LEDs on the BBB:
 
 ```go
-import "github.com/cfreeman/embd"
-import _ "github.com/cfreeman/embd/host/all"
+import "github.com/aquarat/embd"
+import _ "github.com/aquarat/embd/host/all"
 ...
 embd.InitLED()
 defer embd.CloseLED()
@@ -157,8 +157,8 @@ led.Toggle()
 Even shorter when quickly trying things out:
 
 ```go
-import "github.com/cfreeman/embd"
-import _ "github.com/cfreeman/embd/host/all"
+import "github.com/aquarat/embd"
+import _ "github.com/aquarat/embd/host/all"
 ...
 embd.InitLED()
 defer embd.CloseLED()
@@ -171,8 +171,8 @@ embd.ToggleLED(3)
 BBB + **PWM**:
 
 ```go
-import "github.com/cfreeman/embd"
-import _ "github.com/cfreeman/embd/host/all"
+import "github.com/aquarat/embd"
+import _ "github.com/aquarat/embd/host/all"
 ...
 embd.InitGPIO()
 defer embd.CloseGPIO()
@@ -186,8 +186,8 @@ pwm.SetDuty(1000)
 Control **GPIO** pins on the RaspberryPi / BeagleBone Black:
 
 ```go
-import "github.com/cfreeman/embd"
-import _ "github.com/cfreeman/embd/host/all"
+import "github.com/aquarat/embd"
+import _ "github.com/aquarat/embd/host/all"
 ...
 embd.InitGPIO()
 defer embd.CloseGPIO()
@@ -199,8 +199,8 @@ embd.DigitalWrite(10, embd.High)
 Could also do:
 
 ```go
-import "github.com/cfreeman/embd"
-import _ "github.com/cfreeman/embd/host/all"
+import "github.com/aquarat/embd"
+import _ "github.com/aquarat/embd/host/all"
 ...
 embd.InitGPIO()
 defer embd.CloseGPIO()
@@ -214,9 +214,9 @@ pin.Write(embd.High)
 Or read data from the **Bosch BMP085** barometric sensor:
 
 ```go
-import "github.com/cfreeman/embd"
-import "github.com/cfreeman/embd/sensor/bmp085"
-import _ "github.com/cfreeman/embd/host/all"
+import "github.com/aquarat/embd"
+import "github.com/aquarat/embd/sensor/bmp085"
+import _ "github.com/aquarat/embd/host/all"
 ...
 bus := embd.NewI2CBus(1)
 ...
@@ -229,9 +229,9 @@ altitude, err := baro.Altitude()
 Even find out the heading from the **LSM303** magnetometer:
 
 ```go
-import "github.com/cfreeman/embd"
-import "github.com/cfreeman/embd/sensor/lsm303"
-import _ "github.com/cfreeman/embd/host/all"
+import "github.com/aquarat/embd"
+import "github.com/aquarat/embd/sensor/lsm303"
+import _ "github.com/aquarat/embd/host/all"
 ...
 bus := embd.NewI2CBus(1)
 ...
@@ -245,11 +245,11 @@ platforms.
 
 ## Contributing
 
-[Pull requests](https://github.com/cfreeman/embd/pulls) that follow the
-[guidelines](https://github.com/cfreeman/embd/blob/master/CONTRIBUTING.md) are very appreciated.
+[Pull requests](https://github.com/aquarat/embd/pulls) that follow the
+[guidelines](https://github.com/aquarat/embd/blob/master/CONTRIBUTING.md) are very appreciated.
 
 If you find a problem but are not up to coding a fix please file an
-[issue](https://github.com/cfreeman/embd/issues).
+[issue](https://github.com/aquarat/embd/issues).
 Thank you!
 
 ## ROADMAP

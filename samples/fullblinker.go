@@ -11,8 +11,8 @@ import (
 	"os/signal"
 	"time"
 
-	"github.com/cfreeman/embd"
-	_ "github.com/cfreeman/embd/host/rpi"
+	"github.com/aquarat/embd"
+	_ "github.com/aquarat/embd/host/rpi"
 )
 
 func main() {

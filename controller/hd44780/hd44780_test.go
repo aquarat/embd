@@ -25,7 +25,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/cfreeman/embd"
+	"github.com/aquarat/embd"
 )
 
 const (

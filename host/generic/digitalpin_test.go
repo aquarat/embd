@@ -22,7 +22,7 @@ package generic
 import (
 	"testing"
 
-	"github.com/cfreeman/embd"
+	"github.com/aquarat/embd"
 )
 
 func TestDigitalPinClose(t *testing.T) {

@@ -30,7 +30,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/cfreeman/embd"
+	"github.com/aquarat/embd"
 	"github.com/golang/glog"
 )
 

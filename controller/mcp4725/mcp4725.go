@@ -23,7 +23,7 @@ package mcp4725
 import (
 	"sync"
 
-	"github.com/cfreeman/embd"
+	"github.com/aquarat/embd"
 	"github.com/golang/glog"
 )
 

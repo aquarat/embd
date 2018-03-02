@@ -21,7 +21,7 @@
 package all
 
 import (
-	_ "github.com/cfreeman/embd/host/bbb"
-	_ "github.com/cfreeman/embd/host/edison"
-	_ "github.com/cfreeman/embd/host/rpi"
+	_ "github.com/aquarat/embd/host/bbb"
+	_ "github.com/aquarat/embd/host/edison"
+	_ "github.com/aquarat/embd/host/rpi"
 )

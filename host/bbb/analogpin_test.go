@@ -22,7 +22,7 @@ package bbb
 import (
 	"testing"
 
-	"github.com/cfreeman/embd"
+	"github.com/aquarat/embd"
 )
 
 func TestAnalogPinClose(t *testing.T) {

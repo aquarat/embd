@@ -22,7 +22,7 @@
 package pcal9535a
 
 import (
-	"github.com/cfreeman/embd"
+	"github.com/aquarat/embd"
 )
 
 // More details at - http://wiki.seeedstudio.com/wiki/Raspberry_Pi_Relay_Board_v1.0

@@ -23,7 +23,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cfreeman/embd"
+	"github.com/aquarat/embd"
 	"github.com/codegangsta/cli"
 )
 

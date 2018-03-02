@@ -22,7 +22,7 @@
 package bme280
 
 import (
-	"github.com/cfreeman/embd"
+	"github.com/aquarat/embd"
 )
 
 const (

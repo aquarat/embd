@@ -22,9 +22,9 @@ package main
 import (
 	"fmt"
 
-	"github.com/cfreeman/embd"
-	"github.com/cfreeman/embd/controller/apa102"
-	_ "github.com/cfreeman/embd/host/all"
+	"github.com/aquarat/embd"
+	"github.com/aquarat/embd/controller/apa102"
+	_ "github.com/aquarat/embd/host/all"
 )
 
 func main() {
