@@ -26,6 +26,7 @@ import (
 	"fmt"
 
 	"github.com/golang/glog"
+	"log"
 )
 
 // Descriptor represents a host descriptor.
@@ -50,7 +51,8 @@ func Register(host Host, describer Describer) {
 		panic("embd: describer is nil")
 	}
 	if _, dup := describers[host]; dup {
-		panic("embd: describer already registered")
+		return
+		log.Println("embd: describer already registered")
 	}
 	describers[host] = describer
 
